@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EstelarPlay | Descubra seu teste grátis</title>
+    <meta
+      name="description"
+      content="Descubra em poucos passos como assistir filmes, séries, canais e esportes em um único lugar com a EstelarPlay."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="card">
+        <header class="brand">
+          <span class="brand__icon">▶</span>
+          <span class="brand__name">ESTELARPLAY</span>
+        </header>
+
+        <div class="progress-wrap">
+          <div class="progress-bar" id="progressBar"></div>
+        </div>
+
+        <div class="steps" id="stepsContainer">
+          <article class="step step--active" data-step="0">
+            <h1>
+              Descubra como assistir <strong>filmes, séries e canais</strong> em
+              um só lugar — sem pagar caro por isso.
+            </h1>
+            <p>
+              Responda 5 perguntas rápidas e libere um teste grátis com mensagem
+              personalizada no WhatsApp.
+            </p>
+
+            <div class="hero-highlight">
+              <h2>Seu entretenimento completo em minutos</h2>
+              <ul>
+                <li>✅ Catálogo atualizado diariamente</li>
+                <li>✅ Canais ao vivo, esportes e conteúdos infantis</li>
+                <li>✅ Funciona no celular, TV Box, Smart TV e computador</li>
+              </ul>
+            </div>
+
+            <button class="btn btn--primary" data-next>
+              Quero descobrir meu teste grátis
+            </button>
+          </article>
+
+          <article class="step" data-step="1">
+            <h2>Onde você mais costuma assistir?</h2>
+            <p>Escolha a opção principal para personalizar seu acesso.</p>
+            <div class="grid">
+              <button class="option" data-key="device" data-value="Celular">📱 Celular</button>
+              <button class="option" data-key="device" data-value="TV Box">📦 TV Box</button>
+              <button class="option" data-key="device" data-value="Smart TV">📺 Smart TV</button>
+              <button class="option" data-key="device" data-value="Computador">💻 Computador</button>
+              <button class="option option--full" data-key="device" data-value="Mais de um dispositivo">✨ Mais de um dispositivo</button>
+            </div>
+          </article>
+
+          <article class="step" data-step="2">
+            <h2>Hoje, como você consome conteúdo?</h2>
+            <div class="stack">
+              <button class="option" data-key="habit" data-value="Assino TV por assinatura">Assino TV por assinatura</button>
+              <button class="option" data-key="habit" data-value="Uso vários streamings">Uso vários streamings diferentes</button>
+              <button class="option" data-key="habit" data-value="Sempre procuro onde tem">Sempre procuro onde tem o que quero</button>
+              <button class="option" data-key="habit" data-value="Não tenho nada fixo">Não tenho nada fixo</button>
+            </div>
+          </article>
+
+          <article class="step" data-step="3">
+            <h2>O que mais te incomoda no cenário atual?</h2>
+            <div class="stack">
+              <button class="option" data-key="pain" data-value="Pago caro e falta conteúdo">Pago caro e mesmo assim falta conteúdo</button>
+              <button class="option" data-key="pain" data-value="Muitos aplicativos">Muitos aplicativos diferentes</button>
+              <button class="option" data-key="pain" data-value="Não encontro novidades">Não encontro filmes e séries novos</button>
+              <button class="option" data-key="pain" data-value="Tudo isso">Tudo isso</button>
+            </div>
+          </article>
+
+          <article class="step" data-step="4">
+            <h2>Quantos serviços você paga por mês hoje?</h2>
+            <div class="grid">
+              <button class="option" data-key="services" data-value="0">0</button>
+              <button class="option" data-key="services" data-value="1 ou 2">1 ou 2</button>
+              <button class="option" data-key="services" data-value="3 ou mais">3 ou mais</button>
+              <button class="option" data-key="services" data-value="Prefiro nem somar">Prefiro nem somar</button>
+            </div>
+          </article>
+
+          <article class="step" data-step="5">
+            <h2>Se pudesse escolher, o que não pode faltar?</h2>
+            <div class="stack">
+              <button class="option" data-key="wish" data-value="Filmes novos">🎬 Filmes novos</button>
+              <button class="option" data-key="wish" data-value="Canais ao vivo">📡 Canais ao vivo</button>
+              <button class="option" data-key="wish" data-value="Esportes">⚽ Esportes</button>
+              <button class="option" data-key="wish" data-value="Séries completas">📚 Séries completas</button>
+              <button class="option" data-key="wish" data-value="Tudo junto">⭐ Tudo junto</button>
+            </div>
+          </article>
+
+          <article class="step" data-step="6">
+            <div class="badge">🔥 OFERTA POR TEMPO LIMITADO</div>
+            <h2>Perfeito. Seu perfil combina com a EstelarPlay.</h2>
+            <p>
+              Liberamos um <strong>teste grátis de 3 horas</strong> para você
+              validar qualidade, estabilidade e variedade antes de decidir.
+            </p>
+
+            <div class="summary" id="summaryBox"></div>
+
+            <a class="btn btn--whatsapp" id="whatsappBtn" href="#" target="_blank" rel="noopener noreferrer">
+              Chamar no WhatsApp e liberar meu teste
+            </a>
+            <button class="btn btn--ghost" id="restartBtn">Refazer respostas</button>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
